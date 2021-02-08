@@ -11,7 +11,7 @@ async function start(){
     container.style.position = 'relative'
     document.body.append(container)
     const labeledFaceDescriptors = await loadLabeledImages()
-    const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, 0.6)
+    const faceMatcher = new faceapi.FaceMatcher(labeledFaceDescriptors, 0.9)
     let image, canvas
 
     document.body.append('โหลดเสร็จแล้ว')
